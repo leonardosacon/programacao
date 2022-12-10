@@ -1,3 +1,3 @@
-$.ready(function(){
-    alert('teste');
-})
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
