@@ -14,7 +14,10 @@
 </head>
 <body>
 
+	
 <?php 
+
+
 $data = array(
     array('members', 'Members List', array(
         array('member.php?id=3', 'John'),
@@ -33,8 +36,10 @@ $data = array(
 
 	
 
-	<div class="container-fluid" >
+	<div class="container-fluid">
 		<div class="row flex-nowrap">
+
+			<!--Sidebar-->
 			<div id="sidebar" class="col-auto col-md-3 col-xl-2 bg-dark">
 			
 				<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark align-items-sm-start text-white min-vh-100" style="border-top: 1px solid white;">
@@ -117,6 +122,7 @@ $data = array(
 				</div>
 			</div>
 			<div class="col p-0" style="border-right:1px solid #ddd;border-top:1px solid white;border-bottom:1px solid white;">	
+				<!--Navbar-->
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
 					<div class="container-fluid">
 						<img src="media/icon/alien.png" alt="Logo" width="20">
@@ -207,9 +213,14 @@ $data = array(
 						</div>
 					</div>
 
-					<div class="row">
+					<div class="row" style="height: 100%;max-height:100%;overflow-y:scroll;">
 						<div class="col">
-							Coluna do elemento
+							<ul class="list-group">
+								<?php 
+								for($i=1; $i <= 15; $i++){?>
+									<li class="list-group-item"><?=$i?></li>
+								<?php }	?>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -217,6 +228,9 @@ $data = array(
 			</div>
 		</div>
 	</div>
+
+
+	  
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
