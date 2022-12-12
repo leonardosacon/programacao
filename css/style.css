@@ -168,7 +168,7 @@ html, body {
     
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:575px) {
     #sidebar div:first-child {
         text-align: center;
     }
